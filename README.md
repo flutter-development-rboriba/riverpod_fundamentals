@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-![Expense Tracker App](./assets/giff/flutter_fundamentals.gif)
+![Riverpod Fundamentals Tutorial](./assets/giff/flutter_fundamentals.gif)
 
 ## Getting Started
 
