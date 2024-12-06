@@ -16,6 +16,7 @@ class _CartScreenState extends ConsumerState<CartScreen> {
   @override
   Widget build(BuildContext context) {
     final cartProducts = ref.watch(cartNotifierProvider);
+    final total = ref.watch(cartTotalProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -43,7 +44,11 @@ class _CartScreenState extends ConsumerState<CartScreen> {
                 );
               }).toList(), // output cart products here
             ),
-
+            const SizedBox(height: 50),
+            Text(
+              'Total Price - \$$total',
+              style: const TextStyle(fontSize: 16),
+            )
             // output totals here
           ],
         ),
